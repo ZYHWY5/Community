@@ -1,0 +1,30 @@
+/* Hackathon Design System Variables (活动页面专用) */
+:root {
+    --bg-color: #050505;
+    --bg-secondary: #0a0a0a;
+    --bg-card: #111111;
+    --text-primary: #ededed;
+    --text-secondary: #a1a1a1;
+    --text-muted: #555555;
+    --accent-primary: #ffffff;
+    --accent-glow: rgba(255, 255, 255, 0.15);
+    --border-color: #222222;
+    --border-hover: #444444;
+    --glass-bg: rgba(25, 25, 25, 0.45);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-blur: 24px;
+    --glass-glow: rgba(255, 255, 255, 0.05);
+    --font-display: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+    --container-width: 1200px;
+    --spacing-sm: 2rem;
+    --spacing-md: 4rem;
+    --spacing-lg: 8rem;
+    --spacing-xl: 12rem;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+}
+

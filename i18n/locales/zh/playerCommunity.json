@@ -1,0 +1,388 @@
+{
+  "routerNav": {
+    "defaultSettings": {
+      "community": "社区",
+      "creator": "创作者",
+      "manage": "管理"
+    },
+    "publish": "发布内容"
+  },
+  "communityNav": {
+    "title": "社区",
+    "login": "登录"
+  },
+  "creatorNav": {
+    "title": "创作者中心",
+    "login": "登录"
+  },
+  "searchPlaceholder": "搜索",
+  "quickPenal": {
+    "uidLabel": "UID",
+    "settings": "设置",
+    "logout": "退出登录",
+    "logoutSuccess": "退出登录成功"
+  },
+  "playerLoginLogin": {
+    "title": "玩家社区",
+    "emailPlaceholder": "请输入邮箱",
+    "passwordPlaceholder": "请输入密码",
+    "loginButton": "登录",
+    "signNewAccount": "注册新账号"
+  },
+  "recommend": {
+    "title": "热门社区",
+    "items": {
+      "steam": "Steam",
+      "communityTwo": "社区二",
+      "communityThree": "社区三"
+    }
+  },
+  "communityItem": {
+    "view": "查看"
+  },
+  "partition": {
+    "items": {
+      "partition1": "分区一",
+      "partition2": "分区二",
+      "partition3": "分区三"
+    }
+  },
+  "level": {
+    "lv": "等级"
+  },
+  "detail": {
+    "back": "返回",
+    "follow": "关注"
+  },
+  "detailInput": {
+    "replyTo": "回复 {name}",
+    "placeholder": "加入讨论",
+    "collect": "收藏",
+    "send": "发送",
+    "cancel": "取消",
+    "toast": {
+      "emptyComment": "评论内容不能为空"
+    }
+  },
+  "commentFirst": {
+    "viewMore": "展开更多",
+    "viewLess": "收起"
+  },
+  "commentList": {
+    "delete": "删除"
+  },
+  "commentSecond": {
+    "expandMore": "展开更多",
+    "collapse": "收起",
+    "confirmDelete": {
+      "title": "删除评论",
+      "message": "确定要删除这条评论吗？",
+      "okText": "确定",
+      "cancelText": "取消"
+    },
+    "toast": {
+      "deleteSuccess": "删除评论成功",
+      "deleteFailed": "删除评论失败"
+    }
+  },
+  "commentSecondItem": {
+    "replyTo": "回复 {name}:",
+    "delete": "删除"
+  },
+  "commentStore": {
+    "confirmDelete": {
+      "title": "删除评论",
+      "message": "确定要删除这条评论吗？",
+      "okText": "确定",
+      "cancelText": "取消"
+    },
+    "toast": {
+      "getCommentListFailed": "获取评论失败：{error}",
+      "getSubCommentListFailed": "获取回复失败：{error}",
+      "emptyComment": "评论内容不能为空",
+      "postSuccess": "评论成功",
+      "postFailed": "评论失败：{error}",
+      "likeSuccess": "点赞成功",
+      "likeFailed": "点赞失败：{error}",
+      "cancelLikeSuccess": "取消点赞成功",
+      "cancelLikeFailed": "取消点赞失败：{error}",
+      "deleteSuccess": "删除成功",
+      "deleteFailed": "删除失败：{error}"
+    }
+  },
+  "creatorPost": {
+    "cover": "封面",
+    "titlePlaceholder": "标题",
+    "descriptionPlaceholder": "简介",
+    "post": "发布"
+  },
+  "creatorManage": {
+    "searchPlaceholder": "搜索",
+    "reviewStatus": "审核状态",
+    "search": "搜索"
+  },
+  "creatorManageItem": {
+    "edit": "编辑",
+    "delete": "删除"
+  },
+  "creatorReviewStatus": {
+    "pending": "待审核",
+    "approved": "审核通过",
+    "rejected": "审核拒绝"
+  },
+  "creatorStore": {
+    "selections": {
+      "post": "发布",
+      "manage": "管理"
+    },
+    "reviewStatus": {
+      "pending": "待审核",
+      "approved": "审核通过",
+      "rejected": "审核拒绝"
+    },
+    "confirmDelete": {
+      "title": "删除帖子",
+      "message": "确定要删除该帖子吗？",
+      "okText": "确定",
+      "cancelText": "取消"
+    },
+    "toast": {
+      "postSuccess": "发布成功",
+      "postFailed": "发布失败",
+      "getManageListFailed": "获取帖子列表失败",
+      "deleteSuccess": "删除成功",
+      "deleteFailed": "删除失败",
+      "invalidPostId": "无效的帖子ID",
+      "getPostDetailFailed": "获取帖子详情失败",
+      "updateSuccess": "更新成功",
+      "updateFailed": "更新失败",
+      "draftSaved": "草稿已保存",
+      "saveDraftFailed": "保存草稿失败",
+      "draftLoaded": "草稿已加载",
+      "noDraftFound": "未找到草稿",
+      "loadDraftFailed": "加载草稿失败"
+    }
+  },
+  "globalMiddleware": {
+    "unpublishedDraft": {
+      "title": "未发布的草稿",
+      "message": "检测到您有未发布的草稿，是否继续编辑？",
+      "okText": "继续编辑",
+      "cancelText": "取消"
+    },
+    "saveDraft": {
+      "title": "保存草稿",
+      "message": "是否保存当前编辑内容为草稿？",
+      "okText": "保存草稿",
+      "cancelText": "不保存"
+    }
+  },
+  "cmsStore": {
+    "sidebar": {
+      "user": "用户",
+      "post": "帖子",
+      "comment": "评论"
+    }
+  },
+  "cmsUserToolbar": {
+    "searchPlaceholder": "搜索",
+    "reset": "重置",
+    "search": "搜索"
+  },
+  "cmsUserItem": {
+    "headers": {
+      "uid": "UID",
+      "nickname": "昵称",
+      "email": "邮箱",
+      "userRole": "用户角色",
+      "reviewStatus": "审核状态"
+    }
+  },
+  "cmsUserDetail": {
+    "fields": {
+      "uid": "UID",
+      "nickname": "昵称",
+      "email": "邮箱",
+      "phone": "手机号",
+      "userRole": "用户角色",
+      "reviewStatus": "审核状态"
+    },
+    "actions": {
+      "cancel": "取消",
+      "save": "保存",
+      "approve": "通过",
+      "reject": "拒绝",
+      "edit": "编辑"
+    }
+  },
+  "cmsPostToolbar": {
+    "searchPlaceholder": "搜索",
+    "reviewStatus": "审核状态",
+    "reset": "重置",
+    "search": "搜索"
+  },
+  "cmsPostDetail": {
+    "fields": {
+      "id": "ID",
+      "createTime": "创建时间",
+      "userId": "用户ID",
+      "userNickname": "用户昵称",
+      "userLevel": "用户等级",
+      "userAvatar": "用户头像",
+      "title": "标题",
+      "tag": "标签",
+      "type": "类型",
+      "url": "链接",
+      "content": "内容",
+      "likeCount": "点赞数",
+      "commentCount": "评论数",
+      "collectCount": "收藏数",
+      "reviewStatus": "审核状态"
+    },
+    "actions": {
+      "approve": "通过",
+      "reject": "拒绝"
+    }
+  },
+  "cmsCommentToolbar": {
+    "searchPlaceholder": "搜索",
+    "reviewStatus": "审核状态",
+    "reset": "重置",
+    "search": "搜索"
+  },
+  "cmsCommentIndex": {
+    "idPrefix": "ID:"
+  },
+  "cmsCommentDetail": {
+    "fields": {
+      "id": "ID",
+      "createTime": "创建时间",
+      "userNickname": "用户昵称",
+      "userAvatar": "用户头像",
+      "content": "内容",
+      "likeCount": "点赞数",
+      "replyCount": "回复数",
+      "postId": "帖子ID",
+      "rootCommentId": "根评论ID",
+      "commentLevel": "评论层级",
+      "reviewStatus": "审核状态"
+    },
+    "actions": {
+      "approve": "通过",
+      "reject": "拒绝"
+    }
+  },
+  "cmsUserStore": {
+    "previewStatus": {
+      "pending": "待审核",
+      "approved": "审核通过",
+      "rejected": "审核拒绝",
+      "placeholder": "审核状态"
+    },
+    "userRole": {
+      "tourist": "游客",
+      "user": "用户",
+      "admin": "管理员",
+      "placeholder": "用户角色"
+    },
+    "toast": {
+      "getUserListFailed": "获取用户列表失败",
+      "getUserDetailFailed": "获取用户详情失败",
+      "noChangesToUpdate": "没有需要更新的内容",
+      "updateUserDetailSuccess": "更新用户详情成功",
+      "updateUserDetailFailed": "更新用户详情失败"
+    }
+  },
+  "cmsPostStore": {
+    "reviewStatus": {
+      "pending": "待审核",
+      "approved": "审核通过",
+      "rejected": "审核拒绝"
+    },
+    "toast": {
+      "getPostListFailed": "获取帖子列表失败",
+      "getPostDetailFailed": "获取帖子详情失败",
+      "reviewSuccess": "审核帖子成功",
+      "reviewFailed": "审核帖子失败"
+    }
+  },
+  "cmsCommentStore": {
+    "reviewStatus": {
+      "pending": "待审核",
+      "approved": "审核通过",
+      "rejected": "审核拒绝"
+    },
+    "toast": {
+      "getCommentListFailed": "获取评论列表失败",
+      "getCommentDetailFailed": "获取评论详情失败",
+      "reviewSuccess": "审核评论成功",
+      "reviewFailed": "审核评论失败"
+    }
+  },
+  "playerLoginRegisterActionButton": {
+    "back": "返回",
+    "next": "下一步",
+    "register": "注册"
+  },
+  "playerLoginRegisterAccount": {
+    "emailPlaceholder": "请输入邮箱",
+    "passwordPlaceholder": "请输入密码",
+    "confirmPasswordPlaceholder": "请确认密码"
+  },
+  "playerLoginStore": {
+    "registerStatus": {
+      "account": "账号",
+      "profile": "资料"
+    },
+    "carctor": {
+      "student": "学生",
+      "worker": "职场人",
+      "player": "玩家"
+    },
+    "toast": {
+      "invalidEmail": "请输入有效的邮箱地址",
+      "passwordTooShort": "密码长度至少为 6 位",
+      "passwordMismatch": "两次输入的密码不一致",
+      "selectIdentity": "请选择你的身份",
+      "uploadAtLeastOne": "请至少上传一个资源文件",
+      "registerSuccess": "注册成功",
+      "registerFailed": "注册失败：{error}",
+      "loginSuccess": "登录成功",
+      "loginFailed": "登录失败：{error}"
+    }
+  },
+  "fileUpload": {
+    "uploadFile": "上传文件"
+  },
+  "userSettingDialogMain": {
+    "configurations": "配置"
+  },
+  "userSettingDialogSideBar": {
+    "accountInformation": "账号信息",
+    "generalSettings": "通用设置"
+  },
+  "userSettingDialogCommonSetting": {
+    "title": "通用设置",
+    "language": "语言",
+    "languageDescription": "选择应用界面的显示语言"
+  },
+  "userSettingDialogProfile": {
+    "account": "账号",
+    "preferredName": "昵称",
+    "accountSecurity": "账号安全",
+    "userId": "用户ID",
+    "copy": "复制",
+    "email": "邮箱",
+    "phone": "手机号",
+    "toast": {
+      "preferredNameEmpty": "昵称不能为空",
+      "avatarUpdateSuccess": "头像更新成功",
+      "avatarUpdateFailed": "头像更新失败"
+    }
+  },
+  "mobileNav": {
+    "home": "首页",
+    "publish": "发布",
+    "profile": "我的"
+  }
+}

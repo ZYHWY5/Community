@@ -1,0 +1,87 @@
+/* eslint-disable */
+@plugin "@tailwindcss/typography" {
+  className: custom-typography;
+}
+/* Markdown 专用样式 - 组件层 */
+@layer project {
+  .custom-typography {
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    max-width: 100%;
+    color: var(--color-gray-800);
+    overflow-x: auto;
+  }
+
+  .custom-typography h1 {
+    font-size: var(--text-lg);
+    line-height: var(--text-lg--line-height);
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: 700;
+    color: var(--color-gray-800);
+  }
+
+  .custom-typography h2 {
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: var(--color-gray-800);
+  }
+
+  .custom-typography h3 {
+    font-size: var(--text-sm);
+    line-height: var(--text-sm--line-height);
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: var(--color-gray-800);
+  }
+  .custom-typography h4 {
+    font-size: var(--text-xs);
+    line-height: var(--text-xs--line-height);
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: var(--color-gray-800);
+  }
+  .custom-typography h5 {
+    font-size: calc(var(--text-xs) - 1px);
+    line-height: 16px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: var(--color-gray-600);
+  }
+
+  .custom-typography p {
+    font-size: var(--text-sm);
+    line-height: var(--text-sm--line-height);
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    font-weight: 400;
+    color: var(--color-gray-700);
+  }
+  .custom-typography a {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  .custom-typography > :first-child {
+    margin-top: 0;
+  }
+  .custom-typography > :last-child {
+    margin-bottom: 0;
+  }
+  .custom-typography table tr th {
+    white-space: nowrap;
+    padding: 8px 6px;
+  }
+  .custom-typography table tr td {
+    padding: 0 6px;
+  }
+  .custom-typography table tbody tr td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

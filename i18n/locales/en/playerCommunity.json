@@ -1,0 +1,388 @@
+{
+  "routerNav": {
+    "defaultSettings": {
+      "community": "Community",
+      "creator": "Creator",
+      "manage": "Manage"
+    },
+    "publish": "Publish"
+  },
+  "communityNav": {
+    "title": "Community",
+    "login": "Log In"
+  },
+  "creatorNav": {
+    "title": "Creator Center",
+    "login": "Log In"
+  },
+  "searchPlaceholder": "Search",
+  "quickPenal": {
+    "uidLabel": "UID",
+    "settings": "Settings",
+    "logout": "Logout",
+    "logoutSuccess": "Logout successfully"
+  },
+  "playerLoginLogin": {
+    "title": "Player Community",
+    "emailPlaceholder": "Enter your Email",
+    "passwordPlaceholder": "Enter your Password",
+    "loginButton": "Login",
+    "signNewAccount": "Sign a new account"
+  },
+  "recommend": {
+    "title": "Popular Communities",
+    "items": {
+      "steam": "Steam",
+      "communityTwo": "Community 2",
+      "communityThree": "Community 3"
+    }
+  },
+  "communityItem": {
+    "view": "View"
+  },
+  "partition": {
+    "items": {
+      "partition1": "Partition 1",
+      "partition2": "Partition 2",
+      "partition3": "Partition 3"
+    }
+  },
+  "level": {
+    "lv": "Lv"
+  },
+  "detail": {
+    "back": "Back",
+    "follow": "Follow"
+  },
+  "detailInput": {
+    "replyTo": "Reply to {name}",
+    "placeholder": "Join the discussion",
+    "collect": "Collect",
+    "send": "Send",
+    "cancel": "Cancel",
+    "toast": {
+      "emptyComment": "Comment cannot be empty"
+    }
+  },
+  "commentFirst": {
+    "viewMore": "View More",
+    "viewLess": "View Less"
+  },
+  "commentList": {
+    "delete": "Delete"
+  },
+  "commentSecond": {
+    "expandMore": "View More",
+    "collapse": "Collapse",
+    "confirmDelete": {
+      "title": "Delete Comment",
+      "message": "Are you sure you want to delete this comment?",
+      "okText": "Confirm",
+      "cancelText": "Cancel"
+    },
+    "toast": {
+      "deleteSuccess": "Comment deleted",
+      "deleteFailed": "Failed to delete comment"
+    }
+  },
+  "commentSecondItem": {
+    "replyTo": "reply {name}:",
+    "delete": "Delete"
+  },
+  "commentStore": {
+    "confirmDelete": {
+      "title": "Delete Comment",
+      "message": "Are you sure you want to delete this comment?",
+      "okText": "Confirm",
+      "cancelText": "Cancel"
+    },
+    "toast": {
+      "getCommentListFailed": "Failed to load comments: {error}",
+      "getSubCommentListFailed": "Failed to load replies: {error}",
+      "emptyComment": "Comment cannot be empty",
+      "postSuccess": "Comment posted",
+      "postFailed": "Failed to post comment: {error}",
+      "likeSuccess": "Liked",
+      "likeFailed": "Failed to like: {error}",
+      "cancelLikeSuccess": "Like removed",
+      "cancelLikeFailed": "Failed to remove like: {error}",
+      "deleteSuccess": "Deleted",
+      "deleteFailed": "Failed to delete: {error}"
+    }
+  },
+  "creatorPost": {
+    "cover": "Cover",
+    "titlePlaceholder": "Title",
+    "descriptionPlaceholder": "Description",
+    "post": "Post"
+  },
+  "creatorManage": {
+    "searchPlaceholder": "Search",
+    "reviewStatus": "Review Status",
+    "search": "Search"
+  },
+  "creatorManageItem": {
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "creatorReviewStatus": {
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected"
+  },
+  "creatorStore": {
+    "selections": {
+      "post": "Post",
+      "manage": "Manage"
+    },
+    "reviewStatus": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "confirmDelete": {
+      "title": "Delete Post",
+      "message": "Are you sure you want to delete this post?",
+      "okText": "Confirm",
+      "cancelText": "Cancel"
+    },
+    "toast": {
+      "postSuccess": "Posted successfully",
+      "postFailed": "Failed to post",
+      "getManageListFailed": "Failed to load posts",
+      "deleteSuccess": "Deleted successfully",
+      "deleteFailed": "Failed to delete",
+      "invalidPostId": "Invalid post ID",
+      "getPostDetailFailed": "Failed to get post detail",
+      "updateSuccess": "Updated successfully",
+      "updateFailed": "Failed to update",
+      "draftSaved": "Draft saved",
+      "saveDraftFailed": "Failed to save draft",
+      "draftLoaded": "Draft loaded",
+      "noDraftFound": "No draft found",
+      "loadDraftFailed": "Failed to load draft"
+    }
+  },
+  "globalMiddleware": {
+    "unpublishedDraft": {
+      "title": "Unpublished Draft",
+      "message": "An unpublished draft was found. Continue editing?",
+      "okText": "Continue",
+      "cancelText": "Cancel"
+    },
+    "saveDraft": {
+      "title": "Save Draft",
+      "message": "Save current content as draft?",
+      "okText": "Save Draft",
+      "cancelText": "Discard"
+    }
+  },
+  "cmsStore": {
+    "sidebar": {
+      "user": "User",
+      "post": "Post",
+      "comment": "Comment"
+    }
+  },
+  "cmsUserToolbar": {
+    "searchPlaceholder": "Search",
+    "reset": "Reset",
+    "search": "Search"
+  },
+  "cmsUserItem": {
+    "headers": {
+      "uid": "UID",
+      "nickname": "Nickname",
+      "email": "Email",
+      "userRole": "User Role",
+      "reviewStatus": "Review Status"
+    }
+  },
+  "cmsUserDetail": {
+    "fields": {
+      "uid": "UID",
+      "nickname": "Nickname",
+      "email": "Email",
+      "phone": "Phone",
+      "userRole": "User Role",
+      "reviewStatus": "Review Status"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "approve": "Approve",
+      "reject": "Reject",
+      "edit": "Edit"
+    }
+  },
+  "cmsPostToolbar": {
+    "searchPlaceholder": "Search",
+    "reviewStatus": "Review Status",
+    "reset": "Reset",
+    "search": "Search"
+  },
+  "cmsPostDetail": {
+    "fields": {
+      "id": "ID",
+      "createTime": "Create Time",
+      "userId": "User ID",
+      "userNickname": "User Nickname",
+      "userLevel": "User Level",
+      "userAvatar": "User Avatar",
+      "title": "Title",
+      "tag": "Tag",
+      "type": "Type",
+      "url": "URL",
+      "content": "Content",
+      "likeCount": "Like Count",
+      "commentCount": "Comment Count",
+      "collectCount": "Collect Count",
+      "reviewStatus": "Review Status"
+    },
+    "actions": {
+      "approve": "Approve",
+      "reject": "Reject"
+    }
+  },
+  "cmsCommentToolbar": {
+    "searchPlaceholder": "Search",
+    "reviewStatus": "Review Status",
+    "reset": "Reset",
+    "search": "Search"
+  },
+  "cmsCommentIndex": {
+    "idPrefix": "ID:"
+  },
+  "cmsCommentDetail": {
+    "fields": {
+      "id": "ID",
+      "createTime": "Create Time",
+      "userNickname": "User Nickname",
+      "userAvatar": "User Avatar",
+      "content": "Content",
+      "likeCount": "Like Count",
+      "replyCount": "Reply Count",
+      "postId": "Post ID",
+      "rootCommentId": "Root Comment ID",
+      "commentLevel": "Comment Level",
+      "reviewStatus": "Review Status"
+    },
+    "actions": {
+      "approve": "Approve",
+      "reject": "Reject"
+    }
+  },
+  "cmsUserStore": {
+    "previewStatus": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "placeholder": "Review Status"
+    },
+    "userRole": {
+      "tourist": "Tourist",
+      "user": "User",
+      "admin": "Admin",
+      "placeholder": "User Role"
+    },
+    "toast": {
+      "getUserListFailed": "Failed to get user list",
+      "getUserDetailFailed": "Failed to get user detail",
+      "noChangesToUpdate": "No changes to update",
+      "updateUserDetailSuccess": "User updated successfully",
+      "updateUserDetailFailed": "Failed to update user"
+    }
+  },
+  "cmsPostStore": {
+    "reviewStatus": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "toast": {
+      "getPostListFailed": "Failed to get post list",
+      "getPostDetailFailed": "Failed to get post detail",
+      "reviewSuccess": "Post reviewed successfully",
+      "reviewFailed": "Failed to review post"
+    }
+  },
+  "cmsCommentStore": {
+    "reviewStatus": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "toast": {
+      "getCommentListFailed": "Failed to get comment list",
+      "getCommentDetailFailed": "Failed to get comment detail",
+      "reviewSuccess": "Comment reviewed successfully",
+      "reviewFailed": "Failed to review comment"
+    }
+  },
+  "playerLoginRegisterActionButton": {
+    "back": "Back",
+    "next": "Next",
+    "register": "Register"
+  },
+  "playerLoginRegisterAccount": {
+    "emailPlaceholder": "Enter your Email",
+    "passwordPlaceholder": "Enter your Password",
+    "confirmPasswordPlaceholder": "Confirm your Password"
+  },
+  "playerLoginStore": {
+    "registerStatus": {
+      "account": "Account",
+      "profile": "Profile"
+    },
+    "carctor": {
+      "student": "Student",
+      "worker": "Worker",
+      "player": "Player"
+    },
+    "toast": {
+      "invalidEmail": "Please enter a valid email address",
+      "passwordTooShort": "Password must be at least 6 characters long",
+      "passwordMismatch": "The two passwords do not match",
+      "selectIdentity": "Please select your identity",
+      "uploadAtLeastOne": "Please upload at least one resource",
+      "registerSuccess": "Register successfully",
+      "registerFailed": "Registration failed: {error}",
+      "loginSuccess": "Login successfully",
+      "loginFailed": "Login failed: {error}"
+    }
+  },
+  "fileUpload": {
+    "uploadFile": "Upload File"
+  },
+  "userSettingDialogMain": {
+    "configurations": "Configurations"
+  },
+  "userSettingDialogSideBar": {
+    "accountInformation": "Account Information",
+    "generalSettings": "General Settings"
+  },
+  "userSettingDialogCommonSetting": {
+    "title": "General settings",
+    "language": "Language",
+    "languageDescription": "Select the application interface display language"
+  },
+  "userSettingDialogProfile": {
+    "account": "Account",
+    "preferredName": "Preferred Name",
+    "accountSecurity": "Account security",
+    "userId": "User ID",
+    "copy": "Copy",
+    "email": "Email",
+    "phone": "Phone",
+    "toast": {
+      "preferredNameEmpty": "Preferred name cannot be empty",
+      "avatarUpdateSuccess": "Avatar updated successfully",
+      "avatarUpdateFailed": "Avatar update failed"
+    }
+  },
+  "mobileNav": {
+    "home": "Home",
+    "publish": "Publish",
+    "profile": "Profile"
+  }
+}

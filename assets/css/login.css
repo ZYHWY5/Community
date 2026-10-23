@@ -1,0 +1,27 @@
+.welcome-login-card {
+  --login-primary-color: var(--primary);
+  --login-text-color: var(--foreground);
+  --login-text-error-color: var(--destructive);
+  --login-btn-color: var(--primary);
+  --login-btn-outline-color: var(--input);
+  --login-btn-outline-text-color: var(--primary);
+  --login-btn-disabled-color: var(--muted);
+  --login-btn-text-normal-color: var(--primary-foreground);
+  --login-btn-text-color: var(--foreground);
+  --login-link-text-color: var(--primary);
+  --login-link-text-disabled-color: var(--color-gray-300);
+  --login-text-tip-color: var(--color-gray-400);
+  --login-input-color: var(--color-gray-100);
+  --login-input-border-color: var(--color-gray-100);
+  --login-input-text-color: var(--foreground);
+  --login-input-text-placeholder-color: var(--color-gray-300);
+  --login-input-error-color: var(--destructive);
+  --login-input-text-error-color: var(--destructive);
+  --login-input-border-error-color: var(--destructive);
+  --login-input-code-color: color-mix(
+    in srgb,
+    var(--destructive) 10%,
+    transparent
+  );
+  --login-input-border-focus-color: var(--foreground);
+}

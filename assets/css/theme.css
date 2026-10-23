@@ -1,0 +1,173 @@
+/* ===== 应用级别 CSS 变量 (语义化变量) ===== */
+:root {
+    /* 语义化颜色 - 用于应用逻辑，不生成 utility 类 */
+    --border: #e4e4e7;
+    --input: #e4e4e7;
+    --ring: #6366f1;
+    --primary: #6366f1;
+    --primary-active: #5046e5;
+    --primary-foreground: #ffffff;
+    --background: #ffffff;
+    --foreground: #18181b;
+    --radius: 4px;
+    --popover: #ffffff;
+    --popover-foreground: #18181b;
+    --secondary: #f4f4f5;
+    --secondary-foreground: #18181b;
+    --muted: #f4f4f5;
+    --muted-foreground: #71717a;
+    --destructive: var(--color-red-400);
+    --destructive-foreground: var(--color-red-400);
+
+    /* 自定义阴影 */
+    --shadow-sm:
+        0px 0px 0.5px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 0px rgba(0, 0, 0, 0.15); /* light/Elevation - 100, Shapes */
+    --shadow-default:
+        0px 0px 0.5px 0px rgba(0, 0, 0, 0.18), 0px 3px 8px 0px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1); /* light/Elevation - 200, Stickies, Comments */
+    --shadow-md:
+        0px 0px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 5px 12px 0px rgba(0, 0, 0, 0.13), 0px 1px 3px 0px rgba(0, 0, 0, 0.1); /* light/Elevation - 300, Tooltips */
+    --shadow-lg:
+        0px 0px 0.5px 0px rgba(0, 0, 0, 0.12), 0px 10px 16px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 5px 0px rgba(0, 0, 0, 0.15); /* light/Elevation - 400, Dialogs */
+    --shadow-xl:
+        0px 0px 0.5px 0px rgba(0, 0, 0, 0.08), 0px 10px 24px 0px rgba(0, 0, 0, 0.18),
+        0px 2px 5px 0px rgba(0, 0, 0, 0.15); /* light/Elevation - 500, Modals */
+
+    /* 颜色系统 */
+    --color-gray-50: #fcfcfc;
+    --color-gray-100: #f4f4f5;
+    --color-gray-200: #e1e1e2;
+    --color-gray-300: #d0d0d4;
+    --color-gray-400: #a1a1aa;
+    --color-gray-500: #7a7a83;
+    --color-gray-600: #52525b;
+    --color-gray-700: #3f3f46;
+    --color-gray-800: #27272a;
+    --color-gray-900: #1d1d20;
+
+    --color-metal-50: #f4f9fa;
+    --color-metal-100: #f0f2f4;
+    --color-metal-200: #dfe2e7;
+    --color-metal-300: #c6cbd2;
+    --color-metal-400: #929aaa;
+    --color-metal-500: #696f7d;
+    --color-metal-600: #3d444d;
+    --color-metal-700: #2b3340;
+    --color-metal-800: #202a36;
+    --color-metal-900: #151b28;
+
+    --color-indigo-50: #f3f6ff;
+    --color-indigo-100: #e0e8ff;
+    --color-indigo-200: #c8d3fe;
+    --color-indigo-300: #aab8ff;
+    --color-indigo-400: #8c96fc;
+    --color-indigo-500: #6b6ef8;
+    --color-indigo-600: #5048e5;
+    --color-indigo-700: #3a2fb2;
+    --color-indigo-800: #26206f;
+    --color-indigo-900: #17163c;
+
+    --color-orange-50: #fff6eb;
+    --color-orange-100: #ffedd6;
+    --color-orange-200: #fed6a9;
+    --color-orange-300: #fdba72;
+    --color-orange-400: #fb923c;
+    --color-orange-500: #f67416;
+    --color-orange-600: #e4570c;
+    --color-orange-700: #b63c0b;
+    --color-orange-800: #80310f;
+    --color-orange-900: #471a0a;
+
+    --color-yellow-50: #fefce7;
+    --color-yellow-100: #fef9c3;
+    --color-yellow-200: #fef08b;
+    --color-yellow-300: #ffe561;
+    --color-yellow-400: #fac905;
+    --color-yellow-500: #d9a508;
+    --color-yellow-600: #bc7c10;
+    --color-yellow-700: #935806;
+    --color-yellow-800: #73430c;
+    --color-yellow-900: #4f2b0c;
+
+    --color-teal-50: #e7fff8;
+    --color-teal-100: #cbfbf0;
+    --color-teal-200: #a0fbe8;
+    --color-teal-300: #5dead5;
+    --color-teal-400: #2bd4bd;
+    --color-teal-500: #14b8a5;
+    --color-teal-600: #0c887e;
+    --color-teal-700: #0e6c65;
+    --color-teal-800: #0c4542;
+    --color-teal-900: #0c312f;
+
+    --color-lime-50: #F7FEE7;
+    --color-lime-100: #E9FCC5;
+    --color-lime-200: #D5F895;
+    --color-lime-300: #BAF15B;
+    --color-lime-400: #91D624;
+    --color-lime-500: #74B710;
+    --color-lime-600: #5B930B;
+    --color-lime-700: #365908;
+    --color-lime-800: #24380A;
+    --color-lime-900: #182509;
+
+    --color-cyan-50: rgba(235, 254, 255, 1);
+    --color-cyan-100: rgba(165, 246, 253, 1);
+    --color-cyan-200: rgba(107, 235, 250, 1);
+    --color-cyan-300: rgba(44, 223, 247, 1);
+    --color-cyan-400: rgba(16, 183, 209, 1);
+    --color-cyan-500: rgba(5, 142, 163, 1);
+    --color-cyan-600: rgba(6, 107, 132, 1);
+    --color-cyan-700: rgba(9, 79, 98, 1);
+    --color-cyan-800: rgba(12, 56, 69, 1);
+    --color-cyan-900: rgba(11, 40, 50, 1);
+
+    --color-red-50: rgba(254, 241, 241, 1);
+    --color-red-100: rgba(255, 220, 220, 1);
+    --color-red-200: rgba(255, 201, 201, 1);
+    --color-red-300: rgba(255, 160, 160, 1);
+    --color-red-400: rgba(255, 101, 101, 1);
+    --color-red-500: rgba(239, 67, 67, 1);
+    --color-red-600: rgba(220, 40, 40, 1);
+    --color-red-700: rgba(177, 27, 27, 1);
+    --color-red-800: rgba(130, 23, 23, 1);
+    --color-red-900: rgba(83, 19, 19, 1);
+
+    --color-dark: #1a1a1a;
+    --color-dark-50: rgba(26, 26, 26, 0.08);
+    --color-dark-100: rgba(26, 26, 26, 0.12);
+    --color-dark-200: rgba(26, 26, 26, 0.18);
+    --color-dark-300: rgba(26, 26, 26, 0.26);
+    --color-dark-400: rgba(26, 26, 26, 0.36);
+    --color-dark-500: rgba(26, 26, 26, 0.48);
+    --color-dark-600: rgba(26, 26, 26, 0.6);
+    --color-dark-700: rgba(26, 26, 26, 0.7);
+    --color-dark-900: #1a1a1a;
+    --color-white: #ffffff;
+
+    --color-light: #1a1a1a;
+    --color-light-50: rgba(26, 26, 26, 0.08);
+    --color-light-100: rgba(26, 26, 26, 0.12);
+    --color-light-200: rgba(26, 26, 26, 0.18);
+    --color-light-300: rgba(26, 26, 26, 0.26);
+    --color-light-400: rgba(26, 26, 26, 0.36);
+    --color-light-500: rgba(255, 255, 255, 0.48);
+    --color-light-600: rgba(26, 26, 26, 0.6);
+    --color-light-700: rgba(26, 26, 26, 0.7);
+    --color-light-900: #1a1a1a;
+    --color-white: #ffffff;
+
+
+    --color-blue-50: rgba(242, 247, 255, 1);
+    --color-blue-100: rgba(220, 235, 254, 1);
+    --color-blue-200: rgba(190, 219, 254, 1);
+    --color-blue-300: rgba(145, 195, 253, 1);
+    --color-blue-400: rgba(97, 166, 250, 1);
+    --color-blue-500: rgba(52, 121, 233, 1);
+    --color-blue-600: rgba(21, 89, 234, 1);
+    --color-blue-700: rgba(23, 63, 171, 1);
+    --color-blue-800: rgba(22, 47, 130, 1);
+    --color-blue-900: rgba(12, 23, 54, 1);
+
+
+}

@@ -1,0 +1,304 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./css/md.css";
+@import "./css/theme.css";
+@import "./css/dark-theme.css";
+/* @import "./font/ui-sf/index.css"; */
+@layer theme, base, components, utilities ,project;
+@custom-variant dark (&:is(.dark *));
+
+/* ===== Tailwind 设计令牌 (生成 utility 类) ===== */
+@theme {
+    /* 颜色系统 */
+    --color-gray-50: var(--color-gray-50);
+    --color-gray-100: var(--color-gray-100);
+    --color-gray-200: var(--color-gray-200);
+    --color-gray-300: var(--color-gray-300);
+    --color-gray-400: var(--color-gray-400);
+    --color-gray-500: var(--color-gray-500);
+    --color-gray-600: var(--color-gray-600);
+    --color-gray-700: var(--color-gray-700);
+    --color-gray-800: var(--color-gray-800);
+    --color-gray-900: var(--color-gray-900);
+
+    --color-metal-50: var(--color-metal-50);
+    --color-metal-100: var(--color-metal-100);
+    --color-metal-200: var(--color-metal-200);
+    --color-metal-300: var(--color-metal-300);
+    --color-metal-400: var(--color-metal-400);
+    --color-metal-500: var(--color-metal-500);
+    --color-metal-600: var(--color-metal-600);
+    --color-metal-700: var(--color-metal-700);
+    --color-metal-800: var(--color-metal-800);
+    --color-metal-900: var(--color-metal-900);
+
+    --color-indigo-50: var(--color-indigo-50);
+    --color-indigo-100: var(--color-indigo-100);
+    --color-indigo-200: var(--color-indigo-200);
+    --color-indigo-300: var(--color-indigo-300);
+    --color-indigo-400: var(--color-indigo-400);
+    --color-indigo-500: var(--color-indigo-500);
+    --color-indigo-600: var(--color-indigo-600);
+    --color-indigo-700: var(--color-indigo-700);
+    --color-indigo-800: var(--color-indigo-800);
+    --color-indigo-900: var(--color-indigo-900);
+
+    --color-orange-50: var(--color-orange-50);
+    --color-orange-100: var(--color-orange-100);
+    --color-orange-200: var(--color-orange-200);
+    --color-orange-300: var(--color-orange-300);
+    --color-orange-400: var(--color-orange-400);
+    --color-orange-500: var(--color-orange-500);
+    --color-orange-600: var(--color-orange-600);
+    --color-orange-700: var(--color-orange-700);
+    --color-orange-800: var(--color-orange-800);
+    --color-orange-900: var(--color-orange-900);
+
+    --color-yellow-50: var(--color-yellow-50);
+    --color-yellow-100: var(--color-yellow-100);
+    --color-yellow-200: var(--color-yellow-200);
+    --color-yellow-300: var(--color-yellow-300);
+    --color-yellow-400: var(--color-yellow-400);
+    --color-yellow-500: var(--color-yellow-500);
+    --color-yellow-600: var(--color-yellow-600);
+    --color-yellow-700: var(--color-yellow-700);
+    --color-yellow-800: var(--color-yellow-800);
+    --color-yellow-900: var(--color-yellow-900);
+
+    --color-teal-50: var(--color-teal-50);
+    --color-teal-100: var(--color-teal-100);
+    --color-teal-200: var(--color-teal-200);
+    --color-teal-300: var(--color-teal-300);
+    --color-teal-400: var(--color-teal-400);
+    --color-teal-500: var(--color-teal-500);
+    --color-teal-600: var(--color-teal-600);
+    --color-teal-700: var(--color-teal-700);
+    --color-teal-800: var(--color-teal-800);
+    --color-teal-900: var(--color-teal-900);
+
+    --color-lime-50: var(--color-lime-50);
+    --color-lime-100: var(--color-lime-100);
+    --color-lime-200: var(--color-lime-200);
+    --color-lime-300: var(--color-lime-300);
+    --color-lime-400: var(--color-lime-400);
+    --color-lime-500: var(--color-lime-500);
+    --color-lime-600: var(--color-lime-600);
+    --color-lime-700: var(--color-lime-700);
+    --color-lime-800: var(--color-lime-800);
+    --color-lime-900: var(--color-lime-900);
+
+    --color-cyan-50: var(--color-cyan-50);
+    --color-cyan-100: var(--color-cyan-100);
+    --color-cyan-200: var(--color-cyan-200);
+    --color-cyan-300: var(--color-cyan-300);
+    --color-cyan-400: var(--color-cyan-400);
+    --color-cyan-500: var(--color-cyan-500);
+    --color-cyan-600: var(--color-cyan-600);
+    --color-cyan-700: var(--color-cyan-700);
+    --color-cyan-800: var(--color-cyan-800);
+    --color-cyan-900: var(--color-cyan-900);
+
+    --color-dark: var(--color-dark);
+    --color-dark-50: var(--color-dark-50);
+    --color-dark-100: var(--color-dark-100);
+    --color-dark-200: var(--color-dark-200);
+    --color-dark-300: var(--color-dark-300);
+    --color-dark-400: var(--color-dark-400);
+    --color-dark-500: var(--color-dark-500);
+    --color-dark-600: var(--color-dark-600);
+    --color-dark-700: var(--color-dark-700);
+    --color-dark-900: var(--color-dark-900);
+    --color-white: var(--color-white);
+
+    --color-light: var(--color-light);
+    --color-light-50: var(--color-light-50);
+    --color-light-100: var(--color-light-100);
+    --color-light-200: var(--color-light-200);
+    --color-light-300: var(--color-light-300);
+    --color-light-400: var(--color-light-400);
+    --color-light-500: var(--color-light-500);
+    --color-light-600: var(--color-light-600);
+    --color-light-700: var(--color-light-700);
+    --color-light-900: var(--color-light-900);
+
+    --color-blue-50: var(--color-blue-50);
+    --color-blue-100: var(--color-blue-100);
+    --color-blue-200: var(--color-blue-200);
+    --color-blue-300: var(--color-blue-300);
+    --color-blue-400: var(--color-blue-400);
+    --color-blue-500: var(--color-blue-500);
+    --color-blue-600: var(--color-blue-600);
+    --color-blue-700: var(--color-blue-700);
+    --color-blue-800: var(--color-blue-800);
+    --color-blue-900: var(--color-blue-900);
+
+    /* 语义化颜色 (引用应用变量) */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary-active: var(--primary-active);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+
+    /* 圆角系统 */
+    --radius-sm: calc(var(--radius) - 2px); /* 2px */
+    --radius-md: var(--radius); /* 4px */
+    --radius-lg: calc(var(--radius) + 2px); /* 6px */
+    --radius-xl: calc(var(--radius) + 4px); /* 8px */
+
+    /* 阴影系统 (引用自定义阴影) */
+    --shadow-sm: var(--shadow-sm); /* light/Elevation - 100, Shapes */
+    --shadow-default: var(--shadow-default); /* light/Elevation - 200, Stickies, Comments */
+    --shadow-md: var(--shadow-md); /* light/Elevation - 300, Tooltips */
+    --shadow-lg: var(--shadow-lg); /* light/Elevation - 400, Dialogs */
+    --shadow-xl: var(--shadow-xl); /* light/Elevation - 500, Modals */
+
+    /* ===== 重新定义标准字体大小 ===== */
+    /* 超小文本 - 用于辅助信息、标签 */
+    --text-xs: 0.75rem; /* 12px */
+    --text-xs--line-height: 1.333; /* 16px / 12px = 1.333 */
+
+    /* 小文本 - 用于次要内容 */
+    --text-sm: 0.875rem; /* 14px */
+    --text-sm--line-height: 1.571; /* 22px / 14px = 1.571 */
+
+    /* 基础文本 - 默认正文大小 */
+    --text-base: 0.9375rem; /* 15px */
+    --text-base--line-height: 1.467; /* 22px / 15px = 1.467 */
+
+    /* 大文本 - 用于重要内容 */
+    --text-lg: 1.0625rem; /* 17px */
+    --text-lg--line-height: 1.294; /* 22px / 17px = 1.294 */
+
+    /* 特大文本 - 用于标题 */
+    --text-xl: 1.25rem; /* 20px */
+    --text-xl--line-height: 1.4; /* 28px / 20px = 1.4 */
+
+    --container-ui: 1630px; /* 1630px UI 布局最大宽度 */
+    --breakpoint-sms: 22.5rem; /* 超小屏幕size  */
+    --font-sans:
+        SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif, system-ui, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans-zh:
+        SF Pro SC, SF Pro Text, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif, system-ui,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+    * {
+        @apply focus:outline-none focus-visible:outline-none;
+        border-color: var(--color-border);
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body,
+    html {
+        @apply bg-background text-foreground;
+        width: 100%;
+        height: 100%;
+    }
+    html[lang="zh"],
+    html[lang="zh-CN"],
+    html[lang="ja-JP"],
+    html[lang="ja"] {
+        font-family: var(--font-sans-zh);
+    }
+
+    /* stylelint-disable-next-line selector-id-pattern */
+    #__nuxt {
+        width: 100%;
+        height: 100%;
+    }
+    /* 自定义滚动条样式 */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--color-gray-100);
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-gray-300);
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--color-gray-400);
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: var(--color-gray-100);
+    }
+
+    /* 深色模式下的滚动条样式已移至 ./css/dark-theme.css */
+
+    button,
+    [role="button"],
+    [type="button"],
+    [tabindex]:not([tabindex="-1"]),
+    a,
+    summary,
+    input[type="checkbox"],
+    input[type="radio"],
+    .cursor-pointer,
+    .icon-button,
+    .interactive-icon {
+        cursor: pointer;
+    }
+}
+
+
+@layer components {
+  .scrollbar-hide{
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      display: none;
+    }
+    &::-webkit-scrollbar-corner {
+      display: none;
+    }
+  }
+}
+
+/* ===== 自定义动画 ===== */
+@keyframes fade-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-up-translate-y {
+    from { transform: translateY(12px); }
+    to   { transform: translateY(0); }
+}
+
+@layer project {
+    .animate-fade-up-d1 {
+        animation: fade-up 0.4s ease 0.05s both;
+    }
+    
+    .animate-fade-up-translate-y-d1 {
+        animation: fade-up-translate-y 0.4s ease 0.05s both;
+    }
+}
